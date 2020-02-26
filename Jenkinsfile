@@ -20,8 +20,8 @@ pipeline {
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                    sh 'C:/Program Files/Git/bin/cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
-                    sh 'C:/Program Files/Git/bin/cf push'
+                    bat 'cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                    bat 'cf push'
                 }
             }
 

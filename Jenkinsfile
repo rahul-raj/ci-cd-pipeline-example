@@ -20,8 +20,8 @@ pipeline {
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                    bat 'C:/Users/320089371/CloudFoundry/cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
-                    bat 'C:/Users/320089371/CloudFoundry/cf push'
+                    powershell 'C:/Users/320089371/CloudFoundry/cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                    powershell 'C:/Users/320089371/CloudFoundry/cf push'
                 }
             }
 
